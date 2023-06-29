@@ -1,14 +1,14 @@
-import logo from './logo.svg';
+import logo from "./logo192.png";
 import './App.css';
+import { Typography } from "@mui/material";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header"><header/>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <Typography>Esta es una prueba para ver si se editaba y cambiaba. Ahora veo como queda.</Typography>
-        </p>
+        <NavBar/>
         <a
           className="App-link"
           href="https://reactjs.org"

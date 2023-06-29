@@ -1,12 +1,14 @@
 const NavBar = () => {
         return (
-            <Nav>
+            <nav>
                 <h3>HELADERIA S&H SWEET AND HEALTHY</h3>
                 <div>
                     <button>Crema y Chocolate</button>
                     <button>Fresas y Crema</button>
                     <button>Sueños de Avellana</button>
                 </div>
-            </Nav>
+            </nav>
         )
-}
+}  
+
+export default NavBar;
