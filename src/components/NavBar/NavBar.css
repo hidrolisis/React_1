@@ -1,0 +1,30 @@
+#logo {
+    position: fixed;
+        top: 20px;
+        /* Distancia desde la parte superior */
+        right: 30px;
+        /* Distancia desde la parte derecha */
+        width: 40px;
+        height: 40px;
+}
+
+.cart-icon {
+    margin-right: 5px;
+    /* Ajusta el margen derecho según tus preferencias */
+}
+
+.cart-count {
+    position: fixed;
+    top: 20px;
+        /* Distancia desde la parte superior */
+    right: 5px;
+        /* Distancia desde la parte derecha */
+    background-color: rgb(54, 141, 212);
+    /* Ajusta el color de fondo según tus preferencias */
+    color: white;
+    /* Ajusta el color del texto según tus preferencias */
+    padding: 4px;
+    /* Ajusta el padding según tus preferencias */
+    border-radius: 50%;
+    /* Aplica un borde redondeado */
+}
