@@ -1,24 +1,23 @@
-import logo from "./logo192.png";
 import './App.css';
-import { Typography } from "@mui/material";
+// import { Usuario } from './componets/Usuario/Usuario';
+import logo from "./logo192.png";
 import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemCount from './components/ItemCount/ItemCount';
+// import { Typography } from "@mui/material";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"><header/>
-        <img src={logo} className="App-logo" alt="logo" />
-        <NavBar/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      {/* <Usuario /> */}
+        <header className="App-header"><header />
+          <img src={logo} className="App-logo" alt="logo" />
+          <NavBar />
+          <ItemListContainer greeting={'Bienvenidos'} />
+          <ItemCount initial={1} stock={20} onAdd={(quantity) => console.log('Cantidad agregada', quantity)} />
+        </header>
+      </div>
   );
 }
 

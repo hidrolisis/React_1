@@ -28,3 +28,47 @@
     border-radius: 50%;
     /* Aplica un borde redondeado */
 }
+
+.Titulo {
+
+}
+
+.boton_tipo_a {
+        background-color: #fde3cf;
+        /* Color crema de fondo */
+        color: #8b4513;
+        /* Letras marrones */
+        font-family: "Helvetica", sans-serif;
+        /* Fuente interesante, puedes cambiarla por otra que te guste */
+        font-size: 19px;
+        /* Tamaño de fuente */
+        margin: 20px;
+        padding: 10px 20px;
+        /* Espacio interno del botón (arriba/abajo, izquierda/derecha) */
+        border: none;
+        /* Sin borde por defecto */
+        border-radius: 10px;
+        /* Borde redondeado */
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+        /* Sombra del botón */
+        cursor: pointer;
+        /* Cambiar el cursor al pasar por encima */
+        transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+        /* Transiciones suaves */
+}
+
+/* Estilo para el botón al pasar por encima */
+.boton_tipo_a:hover {
+    background-color: #fbd5b3;
+        /* Cambiar el color de fondo al pasar el cursor */
+        transform: scale(1.05);
+        /* Escalar el botón ligeramente */
+}
+
+/* Estilo para el botón al hacer clic */
+.boton_tipo_a:active {
+    background: linear-gradient(45deg, #fde3cf, transparent);
+    /* Fondo del botón con gradiente */
+    transform: translateY(10px);
+    /* Mover el botón hacia abajo aún más */
+} 
