@@ -1,29 +1,32 @@
-import CartWidget from '../CartWidget/CartWidget'
+import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css';
+import React from 'react';
+import { AppBar, Toolbar, Typography } from '@mui/material';
 
-const NavBar = () => {
+function NavBar() {
     const cartItemCount = 5;
-        return (
-            <nav className="Titulo">
-                <h3>S&H</h3>
-                <h3>(SWEET AND HEALTHY ICECREAM)</h3>
-                <h4>Heladería y cafe para paladares exigentes</h4>
+
+    return (
+        <AppBar position="static">
+            <Toolbar className="barra">
+                <div className="center-container">
+                    <Typography variant="h2">S&H, Sweet and Healthy</Typography>
+                    <Typography variant="h6">Exquisitos helados con impresionantes sabores sin azúcar.</Typography>
+                </div>
+
+                {/* Botones del menú principal */}
                 <div className="botones_navbar">
-                    <button className="boton_tipo_a" onclick="addIceCream()">Crema y Chocolate
-                    </button>
-                    <button className="boton_tipo_a" onclick="addIceCream()">Fresas y Crema
-                    </button>
-                    <button className="boton_tipo_a" onclick="addIceCream()">Sueños de Avellana
-                    </button>
+                    <button className="boton_tipo_a">Crema y Chocolate</button>
+                    <button className="boton_tipo_a">Fresas y Crema</button>
+                    <button className="boton_tipo_a">Sueños de Avellana</button>
                     <CartWidget id='logo' />
                     <span className="cart-icon">
-                        <span className="cart-count">{cartItemCount}
-                        </span>
+                        <span className="cart-count">{cartItemCount}</span>
                     </span>
                 </div>
-                
-            </nav>
-        )
-}  
+            </Toolbar>
+        </AppBar>
+    );
+}
 
 export default NavBar;

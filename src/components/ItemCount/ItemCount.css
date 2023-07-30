@@ -1,0 +1,50 @@
+.Controls {
+    display: flex;
+    /* Mostrar los elementos de forma horizontal */
+    justify-content: center;
+    /* Centrar los elementos horizontalmente */
+    align-items: center;
+    /* Centrar los elementos verticalmente */
+}
+
+.Button {
+    /* Estilo para el botón principal */
+    background-color: #fde3cf;
+    color: #8b4513;
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.Button:hover {
+    /* Estilo para el botón al pasar el cursor por encima */
+    background-color: #fbd5b3;
+    transform: scale(1.05);
+}
+
+.Botton {
+    /* Estilo para los botones de incremento y decremento */
+    background-color: #fde3cf;
+    color: #8b4513;
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+    margin: 5px;
+    /* Añadir un margen entre los botones de incremento y decremento */
+}
+
+.Botton:hover {
+    /* Estilo para los botones de incremento y decremento al pasar el cursor por encima */
+    background-color: #fbd5b3;
+    transform: scale(1.05);
+}
